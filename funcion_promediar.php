@@ -1,7 +1,14 @@
 <?php
+
 //Definicion
 function promediar($aNumeros){
-
+    $suma=0;
+    foreach($aNumeros as $numero){
+        $suma = $suma + $numero;
+    }
+    $promedio =$suma/ count($aNumeros);
+    return $promedio;
+    
 }
 
 //Uso
